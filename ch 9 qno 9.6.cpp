@@ -1,7 +1,7 @@
 //Write a program to check whether a number is prime number, even number or odd number number using function.
 #include<iostream>
 using namespace std;
-void Check_number(int n);
+void Check_number(int n)
 {
 	int c=0,i;
 	for(i=2;i<n;i++)
@@ -11,7 +11,7 @@ void Check_number(int n);
 	}
 	if(n%2==0&&c==0)
 	cout<<n<<"is a even prime number:";
-	else if(n%2!==0&&c===0)
+	else if(n%2!==0&&c==0)
 	cout<<n<<"is a odd prome number:";
 	else if(n%2==0&&c!=0)
 	cout<<n<<"is only an even number,not prime";
